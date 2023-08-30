@@ -1,0 +1,373 @@
+html {
+	scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 2em;
+}
+
+th {
+    width: 30%;
+    font-weight: lighter;
+    border-bottom: solid 3px rgb(230, 230, 230);
+    padding-left: 20px;
+}
+
+td {
+    border-bottom: solid 3px rgb(230, 230, 230);
+    padding-left: 20px;
+}
+
+article {
+    padding-bottom: 50px;
+}
+.flex {
+    display: flex;
+}
+
+/*header*/
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    padding: 10px;
+    padding-top: 18px;
+    z-index: 100;
+}
+
+header img {
+    width: 50px;
+}
+
+
+.header_homeLink p {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.header_menu {
+    margin-left: auto;
+}
+
+.header_menu li {
+    margin-left: 35px;
+}
+
+/*article*/
+.article_title {
+    display: flex;
+    align-items: center; /* 垂直中心 */
+    justify-content: center; /* 水平中心 */
+    margin: 50px;
+}
+  .article_title:before, .article_title:after {
+    border-top: 4px double rgb(190, 190, 190);
+    content: "";
+    width: 3em; /* 線の長さ */
+}
+  .article_title:before {
+    margin-right: 2em; /* 文字の右隣 */
+}
+  .article_title:after {
+    margin-left: 2em; /* 文字の左隣 */
+}
+
+.article_title h3 {
+    font-size: 30px;
+    color: blue;
+}
+  
+
+/*topWrapper*/
+.topWrapper {
+    position: relative;
+    padding-top: 70px;
+}
+
+.topWrapper img {
+    width: 100vw;
+    height: 93vh;
+}
+
+.topWrapper_text {
+    position: absolute;
+    top: 40vh;
+    right: 5vw;
+    font-size: 30px;
+    font-family: serif;
+    color: whitesmoke;
+    text-shadow: 1px 1px gray;
+}   
+
+/*philosophy*/ 
+.philosophy_item {
+    position: relative;
+}
+
+.philosophy_item img {
+    margin: 0 auto;
+}
+
+.philosophy_text {
+    position: absolute;
+    top: 7vw;
+    left: 9vw;
+}
+
+.philosophy_text h4 {
+    font-size: 30px;
+    margin-bottom: 3vw;
+    color: rgb(79, 186, 143);
+}
+
+.philosophy_text p {
+    font-size: 20px;
+}
+
+/*works*/
+.splide__slide img {
+    height: auto;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.splide__slide img:hover { 
+    opacity: 0.6; filter: brightness(110%); 
+}
+
+.splide__slide p {
+    text-align: center;
+}
+
+/*greeting*/
+.greeting_item {
+    position: relative;
+}
+
+.greeting_item img {
+    margin: 0 auto;
+}
+
+.greeting_item p {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    font-size: 25px;
+}
+
+/*recuruit*/
+.recruit {
+    position: relative;
+}
+
+.recruit::after {
+    content: "";
+    height: 700px;
+    width: 100%;
+    background-color: rgb(255, 255, 194);
+    position: absolute;
+    top: 95px;
+    z-index: -1;
+
+}
+
+.recruit img {
+    margin-left: auto;
+}
+
+.recruit_text {
+    width: 450px;
+    position: absolute;
+    top: 200px;
+    left: 3vw;
+}
+
+.re_text {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.re_txt1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.re_txt2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.re_txt3 {
+    font-size: 18px;
+}
+
+.button {
+    position: absolute;
+    top: 550px;
+    left: 70px;
+}
+
+.button a {
+    font-size: 30px;
+    padding: 20px 40px;
+    color: white;
+    background-color: rgb(79, 186, 143);
+    border-radius: 50px;
+}
+
+/*footer*/
+footer {
+    background-color: black;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+footer img {
+    width: 100px;
+}
+
+.footer_logoBox {
+    padding: 50px 0;
+}
+
+.footer_homeLink {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.footer_menuList {
+    justify-content: space-around;
+    padding: 0;
+}
+
+.copy {
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    padding-top: 50px;
+}
+
+/*スマホ*/
+@media all and (max-width: 600px) {
+    table {
+        width: 90vw;
+    }
+
+    th {
+        width: 40%;
+        padding-left: 0;
+    }
+
+    td {
+        padding-left: 0;
+    }
+
+    article {
+        padding: 0;
+    }
+    /*header*/
+    .header_menu {
+        display: none;
+    }
+
+    /*article*/
+    .article_title {
+        margin: 40px;
+    }
+
+    /*toWrapper*/
+    .topWrapper img {
+        height: auto;
+    }
+
+    .topWrapper_text {
+        top: 30vw;
+        font-size: 18px;
+    }
+
+    /*philosophy*/
+    .philosophy_text {
+        position: static;
+    }
+
+    .philosophy_text h4 {
+        position: absolute;
+        top: 7.5vw;
+        left: 9vw;
+    }
+
+    .philosophy_text p {
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    /*greeting*/
+    .greeting_item p {
+        position: static;
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    /*recuruit*/
+    .recruit::after {
+        height: 650px;
+    }
+    .recruit img {
+        margin: 0;
+    }
+
+    .recruit_text {
+        position: static;
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .button {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /*footer*/
+    footer {
+        margin-top: 30px;
+    }
+
+    .footer_logoBox {
+        padding: 20px 0;
+    }
+
+    .footer_menuList {
+        display: block;
+    }
+
+    .footer_menuList li {
+        text-align: center;
+    }
+
+    .copy {
+        padding-top: 20px;
+    }
+
+}
